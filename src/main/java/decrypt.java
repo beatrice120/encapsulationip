@@ -10,8 +10,8 @@ public class decrypt {
 
             cipherText = cipherText.toLowerCase();
             String plainText = "";
-            for (int i = 0; i < cipherText.length(); i++) {
 
+            for (int i = 0; i < cipherText.length(); i++) {
                 int charPosition = ALPHABETS.indexOf(cipherText.charAt(i));
                 int keyVal = (charPosition - shiftKey) % 26;
                 if (keyVal < 0) {

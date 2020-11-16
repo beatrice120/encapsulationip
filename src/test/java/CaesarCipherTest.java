@@ -22,4 +22,12 @@ public class CaesarCipherTest {
         CaesarCipher testCaesarCipher  = new CaesarCipher("rwamagana", 2);
         assertEquals("rwamagana", testCaesarCipher.getShiftkey());
     }
+    @Test
+    public void encrypt_testing() {
+
+        int key = 1;
+        String text = "you";
+        String expected = "zpv";
+        assertEquals(expected, CaesarCipher.CaesarCipher1( text, key ));
+    }
 }

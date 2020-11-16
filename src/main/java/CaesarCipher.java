@@ -34,6 +34,7 @@ public  int getShiftkey(){
            CaesarCipher2.append(message.charAt(counter));
 
        }
+
       }
 return CaesarCipher2.toString();
     }
