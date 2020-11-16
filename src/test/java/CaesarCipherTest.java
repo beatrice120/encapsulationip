@@ -6,20 +6,20 @@ public class CaesarCipherTest {
 
     @Test
     public void newCaesarCipher_instantiatesCorrectly() {
-        CaesarCipher testCaesarCipher = new CaesarCipher("betty", 2);
+        CaesarCipher testCaesarCipher = new CaesarCipher("rwamagana", 2);
         assertEquals(true, testCaesarCipher instanceof CaesarCipher);
     }
 
 
     @Test
     public void newCaesarCipher_getsText() {
-        CaesarCipher testCaesarCipher = new CaesarCipher("betty", 3);
-        assertEquals("betty", testCaesarCipher.getText());
+        CaesarCipher testCaesarCipher = new CaesarCipher("rwamagana", 2);
+        assertEquals("rwamagana", testCaesarCipher.getText());
     }
 
     @Test
     public void getCaesarCipher_getsShiftkey() {
-        CaesarCipher testCaesarCipher  = new CaesarCipher("betty", 3);
-        assertEquals("betty", testCaesarCipher.getShiftkey());
+        CaesarCipher testCaesarCipher  = new CaesarCipher("rwamagana", 2);
+        assertEquals("rwamagana", testCaesarCipher.getShiftkey());
     }
 }
