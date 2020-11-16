@@ -38,7 +38,11 @@ Follow the following setup instructions to run the program.
 
 ## Known Bugs
 none
+## contact us on
+Tel: 0781915357
+Email: Bshabani120@daviscollege.com
 
+##LICENSE
 
 Copyright (c) 2020 [MIT LICENSE](./LICENSE)
 
