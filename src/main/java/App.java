@@ -11,7 +11,7 @@ plainText=aScanner.nextLine();
 System.out.println("Enter your favorite shift key");
 shiftKey=aScanner.nextInt();
         System.out.println("the encrypted text:" + CaesarCipher.CaesarCipher1(plainText,shiftKey));
-        System.out.println("the decrepted text:" + CaesarCipher.CaesarCipher3(plainText,shiftKey));
+        System.out.println("the decrepted text:" + decrypt.decrypt1(CaesarCipher.CaesarCipher1(plainText,shiftKey),shiftKey));
 
 
     }

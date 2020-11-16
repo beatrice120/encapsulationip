@@ -3,35 +3,23 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CaesarCipherTest {
+
     @Test
-    public void uppercase() {
-        char d='G';
-        char expectedc = 'G';
-        assertEquals(expectedc, G);
+    public void newCaesarCipher_instantiatesCorrectly() {
+        CaesarCipher testCaesarCipher = new CaesarCipher("betty", 2);
+        assertEquals(true, testCaesarCipher instanceof CaesarCipher);
+    }
+
+
+    @Test
+    public void newCaesarCipher_getsText() {
+        CaesarCipher testCaesarCipher = new CaesarCipher("betty", 3);
+        assertEquals("betty", testCaesarCipher.getText());
     }
 
     @Test
-    public void myword() {
-
-        public void chararray () {
-            char ch = 'a';
-            char expectedch = 'a';
-            assertEquals(expectedch, ch);
-        }
-        @Test
-        public void uppercase () {
-            char c = 'B';
-            char expectedc = 'B';
-            assertEquals(expectedc, c);
-        }
-
-
-
-        @Test
-        public void lowercase () {
-            char c = 'd';
-            char expectedc = 'd';
-            assertEquals(expectedc, c);
-        }
+    public void getCaesarCipher_getsShiftkey() {
+        CaesarCipher testCaesarCipher  = new CaesarCipher("betty", 3);
+        assertEquals("betty", testCaesarCipher.getShiftkey());
     }
 }
