@@ -1,5 +1,5 @@
 ## Author
-* Beatrice Shabani
+ Beatrice Shabani
 
 
 # Caesar Cipher
