@@ -23,4 +23,24 @@ public class CaesarCipher {
 return CaesarCipher2.toString();
     }
 
+    public static String CaesarCipher3(String message,int shiftKey){
+        final String ALPHABETS="abcdefghijklmnopqrstuvwxyz";
+        message = message.toLowerCase();
+        StringBuilder CaesarCipher3=new StringBuilder();
+        for (int counter = 0; counter < message.length() ; counter++){
+            if(Character.isLetter(message.charAt(counter))){
+                int CharPosition= ALPHABETS.indexOf(message.charAt(counter));
+                int KeyValue= (CharPosition -shiftKey) % 26;
+                char CyperValue = ALPHABETS .charAt(KeyValue);
+                CaesarCipher3.append(CyperValue);
+
+            }
+            else {
+
+                CaesarCipher3.append(message.charAt(counter));
+
+            }
+        }
+        return CaesarCipher3.toString();
+    }
 }
