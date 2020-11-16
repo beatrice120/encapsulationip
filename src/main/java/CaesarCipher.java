@@ -12,8 +12,8 @@ public class CaesarCipher {
     public String  getText(){
         return this.text;
     }
+public  int getShiftkey(){
 
-    public int getShiftkey(){
         return this.shiftkey;
     }
     public static final String ALPHABETS="abcdefghijklmnopqrstuvwxyz";
