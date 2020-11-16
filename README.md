@@ -7,6 +7,7 @@ A Caesar cipher is a type of substitution in which each letter is shifted a cert
  For example, with a shift of 1, A would be replaced by B, B would become C, and so on. For more information on it, 
 you can check this out
 
+
 ## requirements
 
 As always, follow the "Red, Green, Refactor" workflow. You should always write a test before implementing a new behavior. Keep this lesson open as you code, and follow along with the workflow as you develop the program.
