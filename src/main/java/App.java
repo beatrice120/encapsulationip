@@ -3,10 +3,14 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String []args) {
-      Scanner in=new Scanner(System.in);
-        System.out.println("Enter a year, we'll tell you if it's a leap year:");
-
-        String msg=in.nextLine();
+Scanner aScanner=new Scanner(System.in);
+String plainText;
+int shiftKey;
+System.out.println("Please Enter message to encrypt:");
+plainText=aScanner.nextLine();
+System.out.println("Enter shift key");
+shiftKey=aScanner.nextInt();
+        System.out.println("the encrypted text:" + CaesarCipher.CaesarCipher1(plainText,shiftKey));
 
     }
     }
